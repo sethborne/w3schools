@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin: 2em 2em 0em 2em;
+    
+}
+
+h1{
+    margin: 1em 0em 0em 0em;
+}
+
+#progressBar {
+    margin: 1em 0em 0em 0em;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#statusBar {
+    width: 5%;
+    height: 2em;
+    background-color: blue;
+    text-align: center;
+    line-height: 2em;
+    color: white;
+    /* font-weight: bolder; */
+}
+
+.progressButton {
+    padding: .5em;
+    border: .1em solid blue;
+    background: none;
+    color: blue;
+}
+
+.progressButton:hover{
+    background: blue;
+    color: white;
+}
