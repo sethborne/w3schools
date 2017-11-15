@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>20171114 Slideshow</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <!-- slideshow container -->
+        <div class="slideshow-container">
+            <!-- side container -->
+            <div class="slides fade">
+                <img class="slideImage" src="./img/img_fjords_wide.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img class="slideImage" src="./img/img_lights_wide.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img class="slideImage" src="./img/img_mountains_wide.jpg" alt="">
+            </div>
+            <div class="slides fade">
+                <img class="slideImage" src="./img/img_nature_wide.jpg" alt="">
+            </div>
+            
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <!-- &#10094; -->
+            <!-- &#10095; -->
+        </div>
+        <div class="dotBar">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </body>
+    <script src="./js/20171114.js"></script>
+</html>
