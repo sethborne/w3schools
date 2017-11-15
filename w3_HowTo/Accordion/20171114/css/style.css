@@ -1,0 +1,33 @@
+.accordion {
+    background-color: rgba(215, 215, 215, 1);
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: rgba(115, 115, 115, 1);
+    color: rgba(245, 245, 245, 1);
+}
+
+.accordion:after {
+    content: "\02795";
+    margin-top: -3px;
+    float: right;
+}
+
+.accordion.active:after {
+    content: "\02796";
+}
+
+.panel  {
+    /* display: none; */
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
