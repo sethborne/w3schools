@@ -1,0 +1,68 @@
+/* h2 {
+    color: red;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.imageThumb img {
+    width: 50%;
+    height: auto;
+}
+
+.modalGlobal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 10em;
+    background-color: rgba(5, 5, 5, .65);
+}
+
+.modalContent img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    animation-name: scaleUp;
+    animation-duration: .6s;
+}
+
+@-webkit-keyframes scaleUp{
+    from{-webkit-transform:scale(0)};
+    to{-webkit-transform:scale(1)};
+}
+
+@keyframes scaleUp{
+    from{transform:scale(0)};
+    to{transform:scale(1)};
+}
+
+.close{
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    color: white;
+    /* float: right; */
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.close:focus, .close:hover {
+    color: black;
+}
+
+#modalCaption {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    animation-name: scaleUp;
+    animation-duration: .6s;
+}
