@@ -1,0 +1,86 @@
+/* h2 {
+    color: red;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modalGlobal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 5, 5, .5);
+    /* animate */
+    animation-name: fadeUp;
+    animation-duration: .4s;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+
+@-webkit-keyframes fadeUp {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes fadeUp {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.modalContent {
+    /* margin: 0 10%; */
+    position: fixed;
+    /* top:35%; */
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    
+    /* animate */
+    animation-name: slideUp;
+    animation-duration: .6s;
+}
+
+@-webkit-keyframes slideUp{
+    from{ bottom: -300px; opacity: 0;};
+    to{ bottom: 0px; opacity: 1;}
+}
+
+@keyframes slideUp{
+    from{ bottom: -300px; opacity: 0;};
+    to{ bottom: 0px; opacity: 1;}
+}
+
+.modalHeader {
+    background-color: green;
+    padding: 1em 2em;
+    color: white;
+}
+
+.close {
+    /* push right */
+    float: right;
+    font-size: 2em;
+    font-weight: lighter;
+    color: grey;
+}
+
+.close:focus, .close:hover {
+    color: white;
+}
+
+.modalBody {
+    padding: 1em 2em;
+}
+
+.modalFooter {
+    background-color: green;
+    padding: .25em 2em;
+    color: white;
+}
+
