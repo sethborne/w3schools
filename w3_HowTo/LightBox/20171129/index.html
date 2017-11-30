@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <h2>LightBox</h2>
+        <!-- initial row -->
+        <div class="row">
+            <div class="col">
+                <img class="hoverShadow" src="./img/img_nature_wide.jpg" alt="#" onclick="openModal();currentSlide(0)">
+            </div>
+            <div class="col">
+                <img class="hoverShadow" src="./img/img_fjords_wide.jpg" alt="#" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="col">
+                <img class="hoverShadow" src="./img/img_mountains_wide.jpg" alt="#" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="col">
+                <img class="hoverShadow" src="./img/img_lights_wide.jpg" alt="#" onclick="openModal();currentSlide(3)">
+            </div>
+        </div>
+        <!-- modal -->
+        <div id="modalContainer" class="modalGlobal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modalContent">
+                <div class="mySlide">
+                    <div class="numberText">1 of 4</div>
+                    <img src="./img/img_nature_wide.jpg" alt="">
+                </div>
+                <div class="mySlide">
+                    <div class="numberText">2 of 4</div>
+                    <img src="./img/img_fjords_wide.jpg" alt="">
+                </div>
+                <div class="mySlide">
+                    <div class="numberText">3 of 4</div>
+                    <img src="./img/img_mountains_wide.jpg" alt="">
+                </div>
+                <div class="mySlide">
+                    <div class="numberText">4 of 4</div>
+                    <img src="./img/img_lights_wide.jpg" alt="">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <div class="captionContainer">
+                    <p id="caption"></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="thumbnail" src="./img/img_nature_wide.jpg" alt="View of Nature" onclick="currentSlide(0)">
+                    </div>
+                    <div class="col">
+                        <img class="thumbnail" src="./img/img_fjords_wide.jpg" alt="View of Trolltunga" onclick="currentSlide(1)">
+                    </div>
+                    <div class="col">
+                        <img class="thumbnail" src="./img/img_mountains_wide.jpg" alt="View of Mountains" onclick="currentSlide(2)">
+                    </div>
+                    <div class="col">
+                        <img class="thumbnail" src="./img/img_lights_wide.jpg" alt="View of Northern Lights" onclick="currentSlide(3)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/lightbox.js"></script>
+    </body>
+</html>

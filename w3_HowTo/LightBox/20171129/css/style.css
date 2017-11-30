@@ -1,0 +1,138 @@
+/* h2 {
+    color: red;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+.row {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+
+.row > .col:not(:first-child) {
+    padding-left: 5px;
+}
+
+img {
+    width: 100%;
+    /* height: auto; */
+    height: 185px;
+    display: inline-block;
+}
+
+.modalGlobal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(5, 5, 5, .75);
+}
+
+.close{
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 3em;
+}
+
+.close:focus, .close:hover {
+    color: rgba(45, 45, 45, 1)
+}
+
+.modalContent{
+    position: relative;
+    /* width: 100%; */
+    /* background-color: #fefefe; */
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.modalContent .mySlide img {
+    width: 100%;
+    height: auto;
+}
+
+.mySlide{
+    display: none;
+}
+
+.numberText {
+    position: absolute;
+    /* font-weight: bold; */
+    /* top: 1em; */
+    /* left: 1em; */
+    padding: 1em;
+    background-color: rgba(5, 5, 5, .35);
+    border-bottom-right-radius: 15px;
+    /* filter: blur(5px); */
+}
+
+.prev, .next {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    /* top: 50%; */
+    width: auto;
+    padding: 1em;
+    margin-top: -20%;
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(5, 5, 5, .25);    
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;  
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(5, 5, 5, .65);
+}
+
+.captionContainer {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.modalContent .row .col img {
+    opacity: 0.5;
+    height: auto;
+}
+
+.modalContent .row .col img:focus, .modalContent .row .col img:hover {
+    opacity: .85;
+}
+
+.modalContent .row .col .active {
+    opacity: 1;
+}
+
+.numberText {
+    color: white;
+}
