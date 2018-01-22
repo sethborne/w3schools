@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.mainContainer {
+    width: 60%;
+    margin: 5rem auto 0 auto;
+}
+
+.accMain {
+    background-color: grey;
+    padding: 2rem 4rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.contentPanel {
+    background-color: white;
+    padding: 2rem 4rem;
+    border: 1px solid grey;
+    display: none;
+}
+
+.contentPanel p {
+    color: black;
+    font-size: 1.4rem;
+}
