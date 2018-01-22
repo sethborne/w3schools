@@ -1,0 +1,29 @@
+*{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.accAccordion {
+    background-color: grey;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.accPanel {
+    background-color: white;
+    border: 1px solid grey;
+    display: none;
+    padding: 1rem 2rem;
+}
+
