@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tabHorz">
+                <!-- Tab Menu -->
+                <button class="tabMenu" onclick="toggleTabs(event, 'Lambda')">Lambda</button>
+                <button class="tabMenu" onclick="toggleTabs(event, 'DynamoDB')">DynamoDB</button>
+                <button class="tabMenu" onclick="toggleTabs(event, 'Beanstalk')">Beanstalk</button>
+            </div>
+            <!-- Tab Content -->
+            <div class="clearfix"></div>
+            <div id="Lambda" class="tabContent" >
+                <h3>Lambda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius recusandae tempore magnam officiis voluptas error, dolore ullam quam sequi rem repellendus illo eos neque.</p>
+            </div>
+            <div id="DynamoDB" class="tabContent">
+                <h3>DynamoDB</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius recusandae tempore magnam officiis voluptas error, dolore ullam quam sequi rem repellendus illo eos neque.</p>
+            </div>
+            <div id="Beanstalk" class="tabContent">
+                <h3>Beanstalk</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius recusandae tempore magnam officiis voluptas error, dolore ullam quam sequi rem repellendus illo eos neque.</p>
+            </div>
+        </div>
+        <script src="./js/togglableTabs.js"></script>
+    </body>
+</html>

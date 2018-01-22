@@ -1,0 +1,54 @@
+*{
+    font-size: 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 5rem auto 0 auto;
+}
+
+.tabHorz {
+    background-color: darkgrey;
+    /* font-size: 2rem; */
+}
+
+.tabMenu {
+    font-size: 2rem;
+    padding: 2rem 6rem;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    width: 33.33%;
+    float: left;
+}
+
+.active {
+    background-color: darkgrey;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tabContent {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 4rem 2rem;
+    display: none;
+}
+
+.tabContent h3 {
+    color: black;
+    font-size: 1.6rem;
+    /* font-size: 1.4rem; */
+    
+}
+
+.tabContent p {
+    color: black;
+    font-size: 1.4rem;
+}
